@@ -1,0 +1,26 @@
+{
+    "data": {
+        "name": "HttpTriggerExample",
+        "entryPoint": "Company.MyFunction.HttpTriggerExample.Run",
+        "scriptFile": "azurefunctions.dll",
+        "language": "dotnet-isolated",
+        "functionDirectory": "",
+        "bindings": [
+            {
+                "name": "req",
+                "type": "httpTrigger",
+                "direction": "In",
+                "authLevel": "Anonymous",
+                "methods": [
+                    "get",
+                    "post"
+                ]
+            },
+            {
+                "name": "$return",
+                "type": "http",
+                "direction": "Out"
+            }
+        ]
+    }
+}
